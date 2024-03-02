@@ -13,7 +13,6 @@ class Program
 
         do
         {
-
             Console.Write("What is your guess? ");
             numberGuess = int.Parse(Console.ReadLine());
 
