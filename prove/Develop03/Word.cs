@@ -14,19 +14,24 @@ public class Word
 
     public void Hide()
     {
-        _text = "_____";
         _isHidden = true;
     }
 
     public void Show()
     {
-        GetDisplayText();
+        _isHidden = false;
     }
 
     public bool IsHidden()
     {
-        bool value = true;
-        return value;
+        if (_isHidden == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public string GetDisplayText()
